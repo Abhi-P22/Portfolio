@@ -1,0 +1,61 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    min-height: 700px;
+    border: var(--border);
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 50%; /* Ensure it takes exactly half of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: var(--border);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space */
+    object-position: center; /* Keeps it centered */
+}
+
+.content {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.p-link {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        transform: scale(0.9);
+        margin: -15px;
+    }
+}
